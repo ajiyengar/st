@@ -237,9 +237,9 @@ ResourcePref resources[] = {
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
-	{ Mod1Mask,             Button4, kscrollup,      {.i = 5} },
+	{ ShiftMask,            Button4, kscrollup,      {.i = 5} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
-	{ Mod1Mask,             Button5, kscrolldown,    {.i = 5} },
+	{ ShiftMask,            Button5, kscrolldown,    {.i = 5} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
 };
 
@@ -270,6 +270,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ MODKEY,               XK_j,           kscrollup,      {.i =  1} },
+	{ MODKEY,               XK_k,           kscrolldown,    {.i =  1} },
 	{ TERMMOD,              XK_U,           zoom,           {.f = +2} },
 	{ TERMMOD,              XK_D,           zoom,           {.f = -2} },
 	{ MODKEY,               XK_l,           externalpipe,   {.v = openurlcmd } },
