@@ -123,7 +123,42 @@ on the command line, as in xterm / rxvt.
 This option is only intended for compatibility,
 and all the remaining arguments are used as a command
 even without it.
+.TP
+.BI \-A " alpha"
+set alpha value.
 .SH SHORTCUTS
+.TP
+.B Alt-j/k or Shift-Mouse Wheel
+Scroll up/down one line at a time.
+.TP
+.B Alt-u/d
+Scroll up/down one screen at a time.
+.TP
+.B Alt-Shift-Page Up/Down, Alt-Shift-U/D
+Increase or decrease font size.
+.TP
+.B Alt-Shift-Home
+Reset to default font size.
+.TP
+.B Alt-Shift-y
+Paste from primary selection (middle mouse button).
+.TP
+.B Alt-Shift-c
+Copy the selected text to the clipboard selection.
+.TP
+.B Alt-Shift-v
+Paste from the clipboard selection.
+.TP
+.B Alt-l
+Show dmenu menu of all URLs on screen and choose one to open.
+.TP
+.B Alt-y
+Show dmenu menu of all URLs on screen and choose one to copy.
+.TP
+.B Alt-o
+Show dmenu menu of all recently run commands and copy the output of the chosen command to the clipboard.
+.I xclip
+required.
 .TP
 .B Break
 Send a break in the serial line.
@@ -141,24 +176,6 @@ Print the full screen to the
 .B Print Screen
 Print the selection to the
 .I iofile.
-.TP
-.B Ctrl-Shift-Page Up
-Increase font size.
-.TP
-.B Ctrl-Shift-Page Down
-Decrease font size.
-.TP
-.B Ctrl-Shift-Home
-Reset to default font size.
-.TP
-.B Ctrl-Shift-y
-Paste from primary selection (middle mouse button).
-.TP
-.B Ctrl-Shift-c
-Copy the selected text to the clipboard selection.
-.TP
-.B Ctrl-Shift-v
-Paste from the clipboard selection.
 .SH CUSTOMIZATION
 .B st
 can be customized by creating a custom config.h and (re)compiling the source
